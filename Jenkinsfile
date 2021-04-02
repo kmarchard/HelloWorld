@@ -19,6 +19,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'ls -ltr'
+                sh 'rm /var/lib/jenkins/workspace/pipeline_5th_jenkinsfile/*'
             }
         }
     }
